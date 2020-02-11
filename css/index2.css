@@ -1,0 +1,2117 @@
+@import "all2.css";
+
+/* ↓↓↓ 以下為首頁css ↓↓↓ ↓↓↓ 以下為首頁css ↓↓↓  */
+.index_main{
+    width: 100%;
+    background-image: url("../img/background/background_mountain10.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* 輪播圖 */
+.index_banner_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 70%, transparent 70%) center center /100% 100%, url("../img/banner/commodity_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.index_banner_pic1, .index_banner_pic2{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    opacity: .96;
+}
+.index_banner_pic1{
+    background-image: url("../img/banner/banner_p.jpg");
+    animation: op_01 15s ease-in-out infinite;
+}
+.index_banner_pic2{
+    background-image: url("../img/banner/banner_q.jpg");
+    animation: op_02 15s ease-in-out infinite;
+}
+@keyframes op_01 {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        /* transform: translate(-3%); */
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes op_02 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+        
+    }
+    50%{
+        /* transform: translate(-3%); */
+    }
+    70% {
+        opacity: 1;
+        
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        
+    }
+}
+.index_banner_stn div p{
+    font-size: 1.75rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke:1px rgba(255, 255, 255, 0.7);
+}
+.index_banner_view{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.index_banner_world{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+/* 熱銷岳器 */
+.index_commodity_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%, url("../img/banner/commodity_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    margin-top: 300px;
+    padding: 20px 0;
+}
+.index_section_title img{
+    display:block;
+}
+.index_section_title h4{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: -80px;
+}
+.index_commodity_wrap{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+.index_commodity_sell{
+    width: 33.33%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.index_sell_title h5{
+    width: 260px;
+    line-height: 2rem;
+    margin:220px auto 10px;
+}
+.index_sell_title p{
+    line-height: 2rem;
+    font-size: 2rem;
+    color: red;
+}
+.index_commodity_sell a h5{
+    width: 240px;
+    line-height: 2rem;
+    margin:10px auto;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background: rgba(1, 97, 42, 0.7);
+    transition:.5s ;
+}
+.index_commodity_wrap div:nth-child(1),.index_commodity_wrap div:nth-child(3){
+    margin-top: -300px;
+    vertical-align: top;
+}
+.index_commodity_wrap div:nth-child(2){
+    margin-top: -210px;
+    vertical-align: top;
+}
+.index_sell_btn:hover{
+    color: rgb(1, 97, 42, 0.7);
+    background: rgba(255, 255, 255);
+}
+
+/* 熱門奔岳 */
+.index_activity_stn{
+    background: linear-gradient(90deg, rgb(1, 97, 42) 31.2%, transparent 31.2%) center center /100% 100%, url("../img/banner/activitye_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+    padding: 20px 0;
+}
+.index_activity_wrap{
+    width: 75%;
+    margin: 0 auto;
+}
+.index_activity_wrap img{
+    width: 60%;
+    min-width: 700px;
+}
+.index_activity_text{
+    width: 60%;
+    padding: 20px 20px 40px;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+    margin: -100px 0 0 300px;
+}
+.index_activity_text p{
+    margin: 10px 0;
+}
+.index_activity_text a{
+    display: inline-block;
+}
+.index_activity_text a h5{
+    background: rgb(1, 97, 42, 0.7);
+    color: rgba(255, 255, 255);
+    padding: 5px;
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    transition:.5s ;
+}
+.index_activity_text a:hover h5{
+    color: rgb(1, 97, 42, 0.7);
+    background: rgba(255, 255, 255);
+}
+
+/* 人氣岳曆 */
+.index_blogo_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/blogo_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+    padding: 20px 0;
+}
+.index_blogo_wrap{
+    width: 75%;
+    margin: 0 auto;
+}
+.blogo_text{
+    padding: 20px 10px 40px;
+}
+.blogo_text a{
+    display: inline-block;
+}
+.blogo_text a h5{
+    padding: 5px;
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    transition:.5s ;
+}
+
+/* 岳理資訊 */
+/* 山岳報 */
+.index_knowledge_stn{
+    background: linear-gradient(90deg, rgb(1, 97, 42) 31.2%, transparent 31.2%) center center /100% 100%, url("../img/banner/knowledge_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+    padding: 20px 0;
+}
+.index_knowledge_wrap{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+.index_knowledge_news{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+}
+.index_knowledge_box{
+    width: 50%; 
+}
+.index_knowledge_news a p{
+    color: rgb(1, 97, 42);
+    border-bottom: 1px dashed rgb(1, 97, 42);
+    font-weight: bolder;
+    transition:.5s ;
+}
+.index_knowledge_news a p span{
+    display: block;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    transition:.5s ;
+}
+.index_knowledge_news a:nth-child(12){
+    display: inline-block;
+}
+.index_knowledge_news a h5{
+    background: rgb(1, 97, 42);
+    color: rgba(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    margin: 100px auto 0;
+    width: 240px;
+    transition:.5s ;
+}
+.index_knowledge_news a p:hover{
+    background: rgba(1, 97, 42, .5);
+    color: rgb(255, 255, 255);
+}
+.index_knowledge_news a p:hover span{
+    color: rgb(255, 255, 255);
+}
+.index_knowledge_news a:hover h5{
+    color: rgb(1, 97, 42, 0.7);
+    background: rgb(255, 255, 255);
+}
+
+/* 百岳尺、百岳圖 */
+.index_knowledge_ruler, .index_knowledge_map{
+    background-repeat: no-repeat;
+    border: 5px solid rgba(214, 225, 219);
+    width: 353px;
+    height: 380px;
+    margin: 10px auto;
+}
+.index_knowledge_ruler{
+    background-image: url("../img/knowledge/knowledge_ruler5.jpg");
+}
+.index_knowledge_map{
+    background-image: url("../img/knowledge/knowledge_map5.jpg");  
+}
+.index_ruler_title, .index_map_title{
+    color: rgb(255, 255, 255);
+    transform: translate(-50%);
+    position: absolute;
+    padding: 176px 0;
+    left: 50%;
+}
+.index_knowledge_ruler a h5, .index_knowledge_map a h5{
+    color: rgb(255, 255, 255);
+    background: rgba(1, 97, 42, .5);
+    width: 353px;
+    padding: 176px 0;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition:.5s ;
+}
+.index_knowledge_ruler a h5:hover, .index_knowledge_map a h5:hover{
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px){
+    /* 熱銷岳器 */
+    .index_commodity_wrap{
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .index_sell_title h5{
+        width: 270px;
+        margin:10px auto 10px;
+    }
+    .index_commodity_sell{
+        margin: 0 auto;
+        width: 50%;
+        position: static;
+    }
+    .index_commodity_wrap div:nth-child(1), .index_commodity_wrap div:nth-child(2), .index_commodity_wrap div:nth-child(3){
+        margin-top: 0px;
+    }
+    .index_commodity_sell a h5{
+        width: 240px;
+        line-height: 2rem;
+        margin:10px auto 50px;
+        color: rgb(255, 255, 255);
+        background: rgba(1, 97, 42, 0.7);
+    }
+    /* 熱門奔岳 */
+    .index_activity_wrap img{
+        width: 100%;
+        min-width: 400px;
+    }
+    .index_activity_text{
+        width: 100%;
+        padding: 20px 20px 40px;
+        box-sizing: border-box;
+        background: linear-gradient(0deg, rgb(255, 255, 255, .9) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255, 0.5);
+        margin:  0  0 40px;
+    }
+    /* 人氣岳曆 */
+    /* 與岳曆共用 */
+
+    /* 岳理資訊 */
+    .index_knowledge_news{
+        width: 100%;
+    }
+    .index_knowledge_wrap{
+        display: block;
+    }
+    .index_knowledge_box{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .index_knowledge_ruler, .index_knowledge_map{
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media screen  and (min-width: 500px) and (max-width: 767px){
+    /* 熱銷岳器 */
+     .index_section_title img{
+        display: none;
+    } 
+    .index_commodity_wrap{
+        display: block;
+        padding: 20px;
+    }
+    .index_sell_title h5{
+        width: 270px;
+        margin:10px auto 10px;
+    }
+    .index_commodity_sell{
+        margin: 0 auto;
+        width: 100%;
+        position: static;
+    }
+    .index_commodity_wrap div:nth-child(1), .index_commodity_wrap div:nth-child(2), .index_commodity_wrap div:nth-child(3){
+        margin-top: 0px;
+    }
+    .index_commodity_sell a h5{
+        width: 240px;
+        line-height: 2rem;
+        margin:10px auto 50px;
+        color: rgb(255, 255, 255);
+        background: rgba(1, 97, 42, 0.7);
+    }
+    /* 熱門奔岳 */
+    .index_activity_wrap img{
+        width: 100%;
+        min-width: 200px;
+    }
+    .index_activity_text{
+        width: 100%;
+        padding: 20px 20px 40px;
+        box-sizing: border-box;
+        background: linear-gradient(0deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+        margin:  0  0 40px;
+    }
+    /* 人氣岳曆 */
+    /* 與岳曆共用 */
+
+    /* 岳理資訊 */
+    .index_knowledge_news{
+        width: 100%;
+    }
+    .index_knowledge_wrap{
+        display: block;
+    }
+    .index_knowledge_box{
+        width: 100%;
+    }
+    .index_knowledge_ruler, .index_knowledge_map{
+        margin: 20px auto;
+    }
+}
+
+@media screen  and (max-width: 499px){
+    .index_main{
+        background-image: none
+    }
+    .index_commodity_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .index_activity_stn{
+        background: linear-gradient(90deg, rgb(1, 97, 42) 31.2%, transparent 31.2%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .index_blogo_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .index_knowledge_stn{
+        background: linear-gradient(90deg, rgb(1, 97, 42) 31.2%, transparent 31.2%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    /* banner */
+    .index_banner_stn div p{
+        font-size: 1.25rem;
+    }
+    .index_banner_stn{
+        height: 500px;
+    }
+    /* 熱銷岳器 */
+    .index_section_title img{
+        display: none;
+    } 
+    .index_commodity_wrap{
+        display: block;
+        padding: 10px;
+        width: 90%;
+    }
+    .index_sell_title h5{
+        width: 250px;
+        margin:10px auto 10px;
+    }
+    .index_commodity_sell{
+        margin: 0 auto;
+        width: 100%;
+        position: static;
+    }
+    .index_commodity_sell img{
+        width: 250px;
+    }
+    .index_commodity_wrap div:nth-child(1), .index_commodity_wrap div:nth-child(2), .index_commodity_wrap div:nth-child(3){
+        margin-top: 0px;
+    }
+    .index_commodity_sell a h5{
+        margin:10px auto 50px;
+    }
+    /* 熱門奔岳 */
+    .index_activity_wrap{
+        width: 90%;
+    }
+    .index_activity_wrap img{
+        width: 100%;
+        min-width: 180px;
+    }
+    .index_activity_text{
+        width: 100%;
+        padding: 20px 10px 40px;
+        box-sizing: border-box;
+        background: linear-gradient(0deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+        margin:  0  0 40px;
+    }
+    /* 人氣岳曆 */
+    .index_blogo_wrap{
+        width: 90%;
+    }
+    /* 與岳曆共用 */
+
+    /* 岳理資訊 */
+    .index_knowledge_ruler, .index_knowledge_map{
+        background-repeat: no-repeat;
+        border: 5px solid rgb(214, 225, 219);
+        width: 170px;
+        height: 170px;
+        margin: 10px auto;
+    }
+    .index_knowledge_news{
+        width: 100%;
+    }
+    .index_knowledge_wrap{
+        display: block;
+        width: 90%;
+    }
+    .index_knowledge_box{
+        width: 100%;
+    }
+    .index_knowledge_ruler, .index_knowledge_map{
+        margin: 20px auto;
+    }
+    .index_ruler_title, .index_map_title{
+        color: rgb(255, 255, 255);
+        transform: translate(-50%);
+        position: absolute;
+        padding: 71px 0;
+        left: 50%;
+    }
+    .index_knowledge_ruler a h5, .index_knowledge_map a h5{
+        color: rgb(255, 255, 255);
+        background: rgba(1, 97, 42, .5);
+        width: 171px;
+        padding: 71px 0;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+    }
+    .index_knowledge_ruler a h5:hover, .index_knowledge_map a h5:hover{
+        opacity: 1;
+    }
+}
+/* ↑↑↑ 以上為首頁css ↑↑↑ ↑↑↑ 以上為首頁css ↑↑↑ */
+
+/* ↓↓↓ 以下為岳器css ↓↓↓ ↓↓↓ 以下為岳器css ↓↓↓ */
+.commodity_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain15.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.commodity_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.commodity_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/commodity_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 80px 0 80px;
+    width: 100%;
+}
+.commodity_wrap{
+    width: 75%;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+}
+.commodity_sell{
+    width: 33.33%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sell_title h5{
+    width: 260px;
+    line-height: 2rem;
+    margin:10px auto 10px;
+}
+.sell_title p{
+    line-height: 2rem;
+    font-size: 2rem;
+    color: red;
+}
+.commodity_sell a h5{
+    width: 240px;
+    line-height: 2rem;
+    margin:10px auto;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background: rgba(1, 97, 42, 0.7);
+    transition:.5s ;
+}
+.commodity_wrap div:nth-child(1), .commodity_wrap div:nth-child(3){
+    vertical-align: top;
+}
+.commodity_wrap div:nth-child(2){
+    vertical-align: top;
+}
+.sell_btn:hover{
+    color: rgb(1, 97, 42, 0.7);
+    background: rgba(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .commodity_wrap{
+        flex-wrap: wrap;
+    }
+    .commodity_sell{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .sell_title h5{
+        width: 270px;
+        margin:10px auto 10px;
+    }
+    .commodity_sell a h5{
+        width: 240px;
+        line-height: 2rem;
+        margin:10px auto 50px;
+        color: rgb(255, 255, 255);
+        background: rgba(1, 97, 42, 0.7);
+    }
+}
+
+@media screen  and (min-width: 500px) and (max-width: 767px){
+    .commodity_wrap{
+        display: block;
+    }
+    .sell_title h5{
+        width: 270px;
+        margin:10px auto 10px;
+    }
+    .commodity_sell{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .commodity_sell a h5{
+        width: 240px;
+        line-height: 2rem;
+        margin:10px auto 50px;
+        color: rgb(255, 255, 255);
+        background: rgba(1, 97, 42, 0.7);
+    }
+}
+
+@media screen  and (max-width: 499px){
+    .commodity_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .commodity_wrap{
+        display: block;
+        padding: 10px;
+        width: 90%;
+    }
+    .sell_title h5{
+        width: 250px;
+        margin:10px auto 10px;
+    }
+    .commodity_sell{
+        margin: 0 auto;
+        width: 100%;
+        position: static;
+    }
+    .commodity_sell img{
+        width: 250px;
+    }
+    .commodity_sell a h5{
+        width: 240px;
+        line-height: 2rem;
+        margin:10px auto 50px;
+        color: rgb(255, 255, 255);
+        background: rgba(1, 97, 42, 0.7);
+    }
+}
+/* ↑↑↑ 以上為岳器css ↑↑↑ ↑↑↑ 以上為岳器css ↑↑↑ */
+
+/* ↓↓↓ 以下為奔岳css ↓↓↓ ↓↓↓ 以下為奔岳css ↓↓↓ */
+.activity_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain22.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.activity_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.activity_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/activitye_wrap3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0 80px;
+    width: 100%;
+}
+.activity_stn .activity_wrap:nth-child(1), .activity_stn .activity_wrap:nth-child(3){
+    background: linear-gradient(-90deg, rgba(255, 255, 255, .5) 50%, transparent 50%) center center /100% 100%, rgba(194, 194, 194, 0);
+}
+.activity_stn .activity_wrap:nth-child(2), .activity_stn .activity_wrap:nth-child(4){
+    background: linear-gradient(90deg, rgba(255, 255, 255, .5) 50%, transparent 50%) center center /100% 100%, rgba(194, 194, 194, 0);
+}
+.activity_wrap{
+    width: 90%;
+    margin: 40px auto;
+    padding: 10px;
+}
+.activity_wrap img{
+    width: 60%;
+    min-width: 750px;
+}
+.activity_text{
+    width: 60%;
+    padding: 20px 10px 40px;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+    margin: -100px 0 0 300px;
+    position: relative;
+}
+.activity_text p{
+    margin: 10px 0;
+}
+.activity_text a{
+    display: inline-block;
+}
+.activity_text a h5{
+    background: rgb(1, 97, 42, 0.7);
+    color: rgba(255, 255, 255);
+    padding: 5px;
+    width: 240px;
+    text-align: center;
+    transition: .5s;
+}
+.activity_text a:hover h5{
+    color: rgb(1, 97, 42, 0.7);
+    background: rgba(255, 255, 255);
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .activity_wrap img{
+        width: 100%;
+        min-width: 90%;
+    }
+    .activity_text{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 10px 40px;
+        background: linear-gradient(0deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+        margin:0;
+        position: relative;
+    }
+}
+
+@media screen  and (max-width: 767px){
+    .activity_wrap img{
+        width: 100%;
+        min-width: 90%;
+    }
+    .activity_text{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 10px 20px;
+        background: linear-gradient(0deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+        margin:0;
+        position: relative;
+    }
+    .activity_text a{
+        position: static;
+    }
+    .activity_text a h5{
+        margin: 0 auto;
+    }
+}
+@media screen  and (max-width: 499px){
+    .activity_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+}
+/* ↑↑↑ 以上為奔岳css ↑↑↑ ↑↑↑ 以上為奔岳css ↑↑↑ */
+
+/* ↓↓↓ 以下為岳曆css ↓↓↓ ↓↓↓ 以下為岳曆css ↓↓↓ */
+.blogo_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain23.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.blogo_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.blogo_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/blogo_wrap3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0 80px;
+    width: 100%;
+}
+
+/* 頁籤 */
+.blogo_praise{
+    width: 75%;
+    margin: 0 auto;
+}
+.blogo_button_wrap, .blogo_word_wrap1, .blogo_word_wrap2, .blogo_word_wrap3{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.button_item1, .button_item2, .button_item3{
+    width: 50%;
+    padding: 10px;
+    border: 0; 
+    border-top: 15px solid rgba(1, 97, 42, .5);
+    border-bottom: 1px solid rgba(255, 255, 255);
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(0deg, rgb(255, 255, 255, .6) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+#check{
+    border-bottom: 1px solid rgba(255, 255, 255);
+    border-top: 15px solid rgba(1, 97, 42);
+    background: rgba(255, 255, 255);
+}
+.blogo_word_wrap1, .blogo_word_wrap2, .blogo_word_wrap3{
+    border-radius: 0 0 10px 10px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.blogo_word_wrap2, .blogo_word_wrap3{
+    display: none;
+}
+.word_item{
+    padding: 10px 20px;
+    width: 50%;
+}
+.img_bg, .word_item img{
+    width: 100%;
+    vertical-align: middle;
+}
+.img_bg{
+    padding: 20px 0;
+    
+}
+.img_bg a{
+    display: inline-block;
+}
+.img_bg a h5{
+    background: rgb(1, 97, 42, 0.7);
+    color: rgba(255, 255, 255);
+    padding: 5px;
+    width: 240px;
+    margin: 0 auto;
+    text-align: center;
+}
+.img_bg a:hover h5{
+    color: rgb(1, 97, 42, 0.7);
+    background: rgba(255, 255, 255);
+}
+.index_blogo_pen{
+    width: 100%;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+}
+.index_blogo_data{
+    width: 40%;
+    min-width: 150px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 4px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.index_blogo_pic{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    height: 550px;
+    background-image: url(../img/blogo/blogo_pic4.jpg);
+}
+.index_blogo_text{
+    width: 100%;
+    padding: 20px 10px 40px;
+}
+
+/* 文章 */
+.blogo_wrap{
+    width: 75%;
+    margin: 40px auto;
+}
+.blogo_wrap:nth-child(even) .blogo_pen{
+    width: 100%;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+}
+.blogo_wrap:nth-child(odd) .blogo_pen{
+    width: 58%;
+    display: inline-block;
+}
+.blogo_data{
+    width: 40%;
+    min-width: 150px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 4px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.blogo_pic{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.blogo_pic.-img1{
+    background-image: url(../img/blogo/blogo_pic4.jpg);
+}
+.blogo_pic.-img2{
+    background-image: url(../img/blogo/blogo_pic5.jpg);
+}
+.blogo_pic.-img3{
+    background-image: url(../img/blogo/blogo_pic6.jpg);
+}
+.blogo_pic.-img4{
+    background-image: url(../img/blogo/blogo_pic7.jpg);
+}
+
+.blogo_wrap:nth-child(even) .blogo_text{
+    width: 100%;
+    padding: 20px 10px 40px;
+}
+.blogo_wrap:nth-child(odd) .blogo_text{
+    width: 42%;
+    display: inline-block;
+    padding: 20px 10px 20px;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 550px;
+}
+.blogo_text a h5{
+    background: rgba(1, 97, 42, 0.7);
+    color: rgba(255, 255, 255);
+    padding: 5px;
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+}
+.blogo_text a:hover h5{
+    color: rgb(1, 97, 42, 0.7);
+    background: rgba(255, 255, 255);
+}
+.blogo_data p:first-child{
+    font-size: 7.5rem;
+    font-weight: bold;
+    padding: 40px 0;
+}
+.blogo_data p{
+    font-size: 5rem;
+    padding: 20px 0;
+}
+.blogo_data img:nth-child(3){
+    margin-top: 30px;
+    width: 120px;
+}
+.blogo_data p:nth-child(4){
+    font-size: 2rem;
+    padding: 12px 0;
+}
+.data_user img{
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid rgb(214, 225, 219, .5)
+}
+.data_user p{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px){
+    /* 頁籤 */
+    .img_bg, .word_item img{
+        display:block;
+        width: 100%;
+    }
+    /* 文章 */
+    .blogo_wrap:nth-child(odd) .blogo_pen{
+        width: 100%;
+        display: inline-block;
+    }
+    .blogo_wrap:nth-child(odd) .blogo_text{
+        width: 100%;
+        display: block;
+        height: unset;
+    }
+}
+
+@media screen  and (min-width: 500px) and (max-width: 767px){
+    /* 頁籤 */
+    .word_item img{
+        width: 100%;
+        margin: 0 auto;
+        display:block;
+    }
+    .img_bg{
+        display:block;
+        width: 100%;
+    }
+    .word_item{
+        width: 100%;
+    }
+    .word_item:nth-child(2){
+        display: none;
+    }
+    /* 文章 */
+    .blogo_wrap:nth-child(even) .blogo_pen{
+        width: 100%;
+        display: inline-block;
+        border: none;
+    }
+    .blogo_wrap:nth-child(odd) .blogo_pen{
+        width: 100%;
+        display: inline-block;
+    }
+    .blogo_wrap:nth-child(odd) .blogo_text{
+        width: 100%;
+        display: block;
+        height: unset;
+    }
+    .blogo_data{
+        width: 100%;
+    }
+    .blogo_pic{
+        width: 100%;
+    }
+    .blogo_pic img{
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width: 499px){
+    .blogo_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+
+    /* 頁籤 */
+    .blogo_praise{
+        width: 90%;
+    }
+    .word_item img{
+        width: 100%;
+        margin: 0 auto;
+        display:block;
+    }
+    .img_bg{
+        display:block;
+        width: 100%;
+    }
+    .word_item{
+        width: 100%;
+        padding: 10px;
+    }
+    .word_item:nth-child(2){
+        display: none;
+    }
+    .img_bg a h5{
+        width: 240px;
+    }
+    /* 文章 */
+    .blogo_wrap{
+        width: 90%;
+    }
+    .blogo_wrap:nth-child(even) .blogo_pen{
+        width: 100%;
+        display: inline-block;
+        border: none;
+    }
+    .blogo_wrap:nth-child(odd) .blogo_pen{
+        width: 100%;
+        display: inline-block;
+    }
+    .blogo_wrap:nth-child(odd) .blogo_text{
+        width: 100%;
+        padding: 10px 10px;
+        height: unset;
+    }
+    .blogo_wrap:nth-child(even) .blogo_text{
+        width: 100%;
+        padding: 10px 0;
+        height: unset;
+    }
+    .blogo_data{
+        width: 100%;
+    }
+    .blogo_pic{
+        width: 100%;
+    }
+    .blogo_pic img{
+        width: 100%;
+    }
+}
+/* ↑↑↑ 以上為岳曆css ↑↑↑ ↑↑↑ 以上為岳曆css ↑↑↑ */
+
+/* ↓↓↓ 以下為山岳報css ↓↓↓ ↓↓↓ 以下為山岳報css ↓↓↓ */
+.news_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain24.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.news_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.news_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/knowledge_wrap3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0 80px;
+    width: 100%;
+}
+.news_wrap{
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.news_box{
+    width: 100%;
+    display: flex;
+    margin: 40px 0;
+    border: 1px solid rgb(255, 255, 255);
+}
+.news_title{
+    width: 20%;
+    padding: 30px 0;
+    background: rgba(1, 97, 42, .5);
+}
+.news_title h5{
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+}
+.news_content{
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 10%, transparent 80%) center center /100% 100%, rgba(255, 255, 255);
+}
+.news_content p{
+    color: rgb(0, 0, 0);
+}
+.news_content p:first-child{
+    color: rgb(1, 97, 42);
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .news_box{
+        display: block;
+    }
+    .news_title{
+        width: 100%;
+        padding: 0;
+    }
+    .news_content{
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width: 767px){
+    .news_box{
+        display: block;
+    }
+    .news_title{
+        width: 100%;
+        padding: 0;
+    }
+    .news_content{
+        width: 100%;
+    }
+}
+@media screen  and (max-width: 499px){
+    .news_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .news_wrap{
+        width: 90%;
+    }
+
+}
+/* ↑↑↑ 以上為山岳報css ↑↑↑ ↑↑↑ 以上為山岳報css ↑↑↑ */
+
+/* ↓↓↓ 以下為百岳尺css ↓↓↓ ↓↓↓ 以下為百岳尺css ↓↓↓ */
+.ruler_main{
+    background-image: url(../img/knowledge/mountain_ruler2.jpg);
+    background-repeat: no-repeat;
+}
+.ruler_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain27.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.ruler_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.ruler_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/ruler_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0 80px;
+    width: 100%;
+    
+}
+
+.ranking {
+    position: fixed;
+    top: 130px;
+    left: 290px;
+    background: rgb(1, 97, 42, .7);
+    z-index: 98;
+    padding: 1px;
+    width: 300px;
+    text-align: center;
+    transform: rotate(-15deg);
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow:  10px 5px 20px rgb(1, 97, 42, .5);
+    border-radius: 40px 5px 40px 5px;
+    animation: bac 5s  ease-in-out infinite;
+}
+
+.ranking h3{
+    font-size: 1.5rem;
+}
+#space_up{
+    opacity: 0;
+}
+#space{
+    height: 326px;
+    opacity: 0;
+}
+.ruler_wrap{
+    width: 75%;
+    z-index: 58;
+}
+.ruler_pointer{
+    position: fixed;
+    height: 200px;
+    top: 330px;
+    z-index: 98;
+}
+.ruler_pointer:before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 20px solid rgba(255, 0, 0, 0.5);
+    position: relative;
+    top: 103px;
+    left: 0px;
+    z-index: 90;
+    animation: R_pointer 5s  ease-in-out infinite;
+}
+.ruler_pointer:after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 20px solid rgba(255, 0, 0, 0.5);
+    position: relative;
+    top: 99px;
+    left: -30px;
+    z-index: 90;
+    animation: R_pointer 5s  ease-in-out infinite;
+}
+@keyframes R_pointer{
+    0%{  border-left: 20px solid rgba(255, 0, 0, 0.4); }
+    40%{  border-left: 20px solid rgba(255, 0, 0);}
+    50%{ border-left: 20px solid rgba(255, 0, 0);}
+    90%{ border-left: 20px solid rgba(255, 0, 0, 0.4);}
+    100%{  border-left: 20px solid rgba(255, 0, 0, 0.4);}
+}
+.ruler_mountain_team{
+    background-image: url(../img/knowledge/mountain_ruler100_2.png);
+    width: 345px;
+    padding-right: 45px;
+    background-repeat: no-repeat;   
+}
+.ruler_mountain_data:nth-child(odd) .ruler_mountain_title{
+    background: rgb(1, 97, 42, .2);
+}
+.ruler_mountain_title{
+    padding-left: 40px;
+}
+.ruler_mountain_title h5{
+    line-height: 6.25rem;
+    color: rgb(255, 255, 255)
+}
+.ruler_mountain_bg{
+    position: fixed;
+    top: 10%;
+    left: 320px;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    border-left: 10px solid rgb(1, 97, 42, .7);
+    border-right: 5px solid rgb(1, 97, 42, .7);
+    border-top: 5px solid rgb(1, 97, 42, .7);
+    border-bottom: 10px solid rgb(1, 97, 42, .7);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transform: rotate(-3deg);
+    display: none;
+    animation: mountain_bg 5s  ease-in-out infinite;
+    border-radius: 40px;
+}
+@keyframes mountain_bg{
+    0%{ 
+        border-color: rgb(1, 97, 42, .5);
+        background: rgb(1, 97, 42, .2);
+        background-image: url(../img/background/background_mountain19.png);
+    }
+    40%{ 
+        border-color: rgb(1, 97, 42, .3);
+        background: rgba(255, 255, 255, 0.3);
+        background-image: url(../img/background/background_mountain19.png);
+    }
+    50%{ 
+        border-color: rgb(1, 97, 42, .3);
+        background: rgba(255, 255, 255, 0.3);
+        background-image: url(../img/background/background_mountain19.png);
+    }
+    90%{ 
+        border-color: rgb(1, 97, 42, .5);
+        background: rgb(1, 97, 42, .2);
+        background-image: url(../img/background/background_mountain19.png);
+    }
+    100%{ 
+        border-color: rgb(1, 97, 42, .5);
+        background: rgb(1, 97, 42, .2);
+        background-image: url(../img/background/background_mountain19.png);
+    }
+}
+.ruler_mountain_data:nth-child(even) .ruler_mountain_bg{
+    transform: rotate(-3.1deg);
+}
+.ruler_mountain_pic{
+    width:50%;
+}
+.ruler_mountain_pic img{
+    width: 100%;
+    margin: 150px 10px;
+    border-top: 50px solid rgba(255, 255, 255);
+    border-bottom: 50px solid rgba(255, 255, 255);
+    border-left: 20px solid rgba(255, 255, 255);
+    border-right: 10px solid rgba(255, 255, 255);
+}
+.ruler_mountain_text{
+    width:50%;
+    margin: 20px 10px;
+    height: 100%;
+    transform: rotate(4deg);
+    background: linear-gradient(0deg, rgb(214, 225, 219, .3) 10%, transparent 80%) center center /100% 100%, rgb(255, 255, 255);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.ruler_mountain_text h5{
+    text-align: center;
+    color: rgb(1, 97, 42);
+}
+.ruler_mountain_text img{
+    width: 85%;
+    display: block;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 995px){
+    .ruler_wrap{
+        width: 100%;
+    }
+    .ranking{
+        display: none
+    }
+    #space_up{
+        display: none;
+    }
+    .ruler_pointer{
+        display: none;
+    }
+    .ruler_mountain_team{
+        width: 75%;
+        margin: 0 auto;
+        padding: 0;
+        background: none;
+    }
+    .ruler_mountain_data{
+        width: 100%;
+        display: inline-block;
+        margin: 20px 0;
+    }
+    .ruler_mountain_title{
+        display: none;
+    }
+    .ruler_mountain_bg{
+        transform: rotate(0deg);
+        display: block;
+        position: static;
+        width: 100%;
+        border: 5px solid rgb(255, 255, 255);
+    }
+    .ruler_mountain_pic{
+        width: 100%;
+    }
+    .ruler_mountain_pic img{
+        border: none;
+        margin: 0;
+    }
+    .ruler_mountain_text{
+        transform: rotate(0deg);
+        margin: 0;
+        border: none;
+        width: 100%;
+    }
+    .ruler_mountain_text img{
+        margin: 0;
+        display: none;
+    }
+    .ruler_mountain_data:nth-child(even) .ruler_mountain_bg{
+        transform: rotate(0deg);
+    }
+}
+
+@media screen  and (max-width: 499px){
+    .ruler_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .ruler_mountain_team{
+        width: 90%;
+    }
+    .ruler_mountain_data:nth-child(even) .ruler_mountain_bg{
+        transform: rotate(0deg);
+    }
+}
+/* ↑↑↑ 以上為百岳尺css ↑↑↑ ↑↑↑ 以上為百岳尺css ↑↑↑ */
+
+/* ↓↓↓ 以下為岳地圖css ↓↓↓ ↓↓↓ 以下為岳地圖css ↓↓↓ */
+.map_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain25.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.map_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.map_stn{
+    background-image: url("../img/background/background_mountain16.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+    position: relative;
+}
+.mountain_yushan, .mountain_xueshan, .mountain_xiuguluanshan, .mountain_nanhudashan, .mountain_kavulungan{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.35;
+    transition: .5s;
+}
+.mountain_yushan{
+    background-image:url("../img/knowledge/map_mountain/3952_b.png") ;
+    width: 130px;
+    height: 81px;
+    top: 1116px;
+    left: 328px;
+}
+.mountain_xueshan{
+    background-image:url("../img/knowledge/map_mountain/3886_b.png") ;
+    width: 119px;
+    height: 85px;
+    top: 300px;
+    left: 690PX;
+    transform: translateX(-50%);
+}
+.mountain_xiuguluanshan{
+    background-image:url("../img/knowledge/map_mountain/3805_b.png") ;
+    width: 152px;
+    height: 84px;
+    top: 1080px;
+    left: 520px;
+}
+.mountain_nanhudashan{
+    background-image:url("../img/knowledge/map_mountain/3742_b.png") ;
+    width: 139px;
+    height: 81px;
+    top: 337px;
+    left: 840px;
+}
+.mountain_kavulungan{
+    background-image:url("../img/knowledge/map_mountain/3092_b.png") ;
+    width: 150px;
+    height: 103px;
+    top: 1736px;
+    left: 291px;
+}
+.mountain_yushan:hover, .mountain_xiuguluanshan:hover, .mountain_xueshan:hover, .mountain_nanhudashan:hover, .mountain_kavulungan:hover{
+    opacity: 1;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.mountain_yushan:hover .mountain_text, .mountain_xiuguluanshan:hover .mountain_text, .mountain_xueshan:hover .mountain_text, .mountain_nanhudashan:hover .mountain_text, .mountain_kavulungan:hover .mountain_text{
+    display: block;
+}
+.mountain_text{
+    position: absolute;
+    width: 500px;
+    background: rgb(255, 255, 255);
+    border: 5px solid rgba(214, 225, 219);
+    display: none;
+    padding: 5px;
+    top: 85px;
+    left:-190px;
+}
+.mountain_kavulungan .mountain_text{
+    top: -80px;
+    left: 160px;
+}
+
+@media screen and (min-width: 1013px) and (max-width: 1216px){
+    .map_stn{
+        background-image: url("../img/background/background_mountain17.png");
+        width: 996px;
+        height: 1600px;
+    }
+    .mountain_yushan{
+        background-image:url("../img/knowledge/map_mountain/3952_m.png") ;
+        width: 110px;
+        height: 69px;
+        top: 897px;
+        left: 268px;
+    }
+    .mountain_xueshan{
+        background-image:url("../img/knowledge/map_mountain/3886_m.png") ;
+        width: 100px;
+        height: 72px;
+        top: 209px;
+        left: 574px;
+    }
+    .mountain_xiuguluanshan{
+        background-image:url("../img/knowledge/map_mountain/3805_m.png") ;
+        width: 128px;
+        height: 70px;
+        top: 868px;
+        left: 431px;
+    }
+    .mountain_nanhudashan{
+        background-image:url("../img/knowledge/map_mountain/3742_m.png") ;
+        width: 118px;
+        height: 68px;
+        top: 240px;
+        left: 700px;
+    }
+    .mountain_kavulungan{
+        background-image:url("../img/knowledge/map_mountain/3092_m.png") ;
+        width: 127px;
+        height: 87px;
+        top: 1421px;
+        left: 237px;
+    }
+    .mountain_text{
+        top: 80px;
+        left:-230px;
+    }
+    .mountain_kavulungan .mountain_text{
+        top: -100px;
+        left: 130px;
+    }
+}
+
+@media screen and (min-width: 785px) and (max-width: 1012px){
+    .map_stn{
+        background-image: url("../img/background/background_mountain18.png");
+        width: 768px;
+        height: 1200px;
+    }
+    .mountain_yushan{
+        background-image:url("../img/knowledge/map_mountain/3952_s.png") ;
+        width: 85px;
+        height: 53px;
+        top: 675px;
+        left: 205px;
+    }
+    .mountain_xueshan{
+        background-image:url("../img/knowledge/map_mountain/3886_s.png") ;
+        width: 78px;
+        height: 56px;
+        top: 144px;
+        left: 443px;
+    }
+    .mountain_xiuguluanshan{
+        background-image:url("../img/knowledge/map_mountain/3805_s.png") ;
+        width: 98px;
+        height: 55px;
+        top: 652px;
+        left: 332px;
+    }
+    .mountain_nanhudashan{
+        background-image:url("../img/knowledge/map_mountain/3742_s.png") ;
+        width: 92px;
+        height: 52px;
+        top: 169px;
+        left: 539px;
+    }
+    .mountain_kavulungan{
+        background-image:url("../img/knowledge/map_mountain/3092_s.png") ;
+        width: 98px;
+        height: 67px;
+        top: 1079px;
+        left: 183px;
+    }
+    .mountain_text{
+        width: 350px;
+        top: 60px;
+        left:-150px;
+    }
+    .mountain_kavulungan .mountain_text{
+        top: -250px;
+        left: 100px;
+    }
+}
+
+@media screen  and (max-width: 786px){
+    .map_banner_stn{
+        width: 768px;
+    }
+    .map_footer{
+        width: 768px;
+    }
+    .map_stn{
+        background-image: url("../img/background/background_mountain18.png");
+        width: 768px;
+        height: 1200px;
+    }
+    .mountain_yushan{
+        background-image:url("../img/knowledge/map_mountain/3952_s.png") ;
+        width: 85px;
+        height: 53px;
+        top: 675px;
+        left: 205px;
+    }
+    .mountain_xueshan{
+        background-image:url("../img/knowledge/map_mountain/3886_s.png") ;
+        width: 78px;
+        height: 56px;
+        top: 144px;
+        left: 443px;
+    }
+    .mountain_xiuguluanshan{
+        background-image:url("../img/knowledge/map_mountain/3805_s.png") ;
+        width: 98px;
+        height: 55px;
+        top: 652px;
+        left: 332px;
+    }
+    .mountain_nanhudashan{
+        background-image:url("../img/knowledge/map_mountain/3742_s.png") ;
+        width: 92px;
+        height: 52px;
+        top: 169px;
+        left: 539px;
+    }
+    .mountain_kavulungan{
+        background-image:url("../img/knowledge/map_mountain/3092_s.png") ;
+        width: 98px;
+        height: 67px;
+        top: 1079px;
+        left: 183px;
+    }
+    .mountain_text{
+        width: 350px;
+        top: 60px;
+        left:-150px;
+    }
+    .mountain_kavulungan .mountain_text{
+        top: -250px;
+        left: 100px;
+    }
+}
+/* ↑↑↑ 以上為岳地圖css ↑↑↑ ↑↑↑ 以上為岳地圖css ↑↑↑ */
+
+/* ↓↓↓ 以下為商品資訊css ↓↓↓ ↓↓↓ 以下為商品資訊css ↓↓↓ */
+.sell_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain21.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.sell_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.sell_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/sell_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 80px 0 80px;
+    width: 100%;
+}
+.sale_name h5{
+    margin-top:20px;
+}
+.sell_wrap_title{
+    margin-bottom: 40px;
+}
+.sale_wrap{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sale_name_title_off{
+    display: none;
+    text-align: center;
+}
+.sale_picture{
+    width: 50%;
+}
+.picture_big{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 350px;
+}
+.picture_big img{
+    width: 100%;
+    margin: 0 auto;
+}
+.picture_small{
+    width: 100%;
+}
+.picture_small img{
+    display: inline-block;
+    width: 33.3%;
+    border: 1px solid rgb(179, 172, 172);
+    padding: 2px;
+    box-sizing: border-box;
+}
+.sale_name{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.sale_name_title{
+    text-align: center;
+}
+.sale_text{
+    font-size: 1rem;
+    padding: 20px 10px 35px 0;
+    line-height: 1.75rem;
+}
+.sale_text_2{
+    font-size: 1rem;
+    padding: 0px 10px 35px 0;
+    line-height: 1.75rem;
+    padding-left: 20px;
+}
+.buy,.money{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+}
+.sale_price, .sale_many{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 20px;
+    padding: 0px 10px;
+}
+.sale_price{
+    font-size: 2rem;
+    color: rgba(1,97,42);
+}
+.sale_many span{
+    vertical-align: middle;
+    color: rgba(1,97,42,0.6);
+}
+.sale_many select{
+    height: 42px;
+    width: 100px;
+}
+.buy a{
+    border: 3px solid rgba(1,97,42,0);
+    padding: 10px 33px;
+    display: inline-block;
+    margin: 5px 20px;
+    color: rgba(255, 255, 255);
+    background: rgba(1,97,42,0.6);
+    transition:.5s ;
+}
+.buy a:hover{
+    color: rgb(1,97,42);
+    background: rgba(214,225,219,0.5);
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .sale_name_title_off{
+        display: block;
+    }
+    .sale_wrap{
+        display: block;
+    }
+    .sale_picture{
+        width: 100%;
+    }
+    .sale_name{
+        width: 100%;
+    }
+    .sale_name_title{
+        display: none;
+    }
+}
+
+@media screen  and (min-width: 500px) and (max-width: 767px){
+    .sale_name_title_off{
+        display: block;
+    }
+    .sale_wrap{
+        display: block;
+    }
+    .sale_picture{
+        width: 100%;
+    }
+    .sale_name{
+        width: 100%;
+    }
+    .sale_name_title{
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 499px){
+    .sell_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .sale_name_title_off{
+        display: block;
+    }
+    .sale_wrap{
+        width: 90%;
+        display: block;
+        padding: 10px;
+    }
+    .sale_picture{
+        width: 100%;
+    }
+    .sale_name{
+        width: 100%;
+        padding: 0;
+    }
+    .sale_name_title{
+        display: none;
+    }
+    .sale_text{
+        padding: 0;
+    }
+    .sale_price{
+        font-size: 1.5rem;
+    }
+    .buy a{
+        font-size: 1rem;
+    }
+    .sale_many select{
+        height: 30px;
+        width: 50px;
+    }
+}
+/* ↑↑↑ 以上為商品資訊css ↑↑↑ ↑↑↑ 以上為商品資訊css ↑↑↑ */
+
+/* ↓↓↓ 以下為詳細岳曆css ↓↓↓ ↓↓↓ 以下為詳細岳曆css ↓↓↓ */
+.writings_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain30.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.writings_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.writings_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/writings_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0 80px;
+    width: 100%;
+}
+.writings_wrap{
+    width: 75%;
+    margin: 0 auto;
+}
+.writings_text{
+    background: rgb(255, 255, 255, .7);
+    padding: 20px 10px 40px;
+}
+.writings_text img{
+    width: 100%;
+    max-width: 700px;
+}
+.writings_text .favorite{
+    margin-left: 10px;
+    width:30px;
+    vertical-align: text-bottom;
+}
+@media screen  and (max-width: 499px){
+    .writings_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .writings_wrap{
+        width: 90%;
+    }
+}
+/* ↑↑↑ 以上為詳細岳曆css ↑↑↑ ↑↑↑ 以上為詳細岳曆css ↑↑↑ */
+
+/* ↓↓↓ 以下為詳細奔岳css ↓↓↓ ↓↓↓ 以下為詳細奔岳css ↓↓↓ */
+.stroke_banner_stn{
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/background/background_mountain31.jpg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.stroke_banner_title{
+    text-align: center;
+    padding: 200px 0;
+    color: rgb(255, 255, 255);
+}
+.stroke_stn{
+    background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 68.8%) center center /100% 100%, url("../img/banner/stroke_wrap.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0 80px;
+    width: 100%;
+}
+.stroke_wrap{
+    width: 75%;
+    margin: 0 auto; 
+}
+.stroke_wrap img{
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    height: 100%;
+}
+.buy2{
+    display: inline-block;
+    width: 40%;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: center;
+}
+.buy2 p{
+    margin: 20px;
+    font-size: 2rem;
+}
+.buy2 a{
+    font-size: 1.5rem;
+    border: 3px solid rgba(1,97,42,0);
+    padding: 10px 33px;
+    display: inline-block;
+    margin: 5px 20px;
+    color: rgba(255, 255, 255);
+    background: rgba(1,97,42,0.6);
+    transition:.5s ;
+}
+.buy2 a:hover{
+    color: rgb(1,97,42);
+    background: rgba(214,225,219,0.5);
+}
+.stroke_text div{
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    border-radius: 20px;
+}
+.stroke_text div:nth-child(odd){
+    border: 5px solid rgb(255, 255, 255);
+    width: 75%;
+}
+.stroke_text div:nth-child(even){
+    width: 55%;
+    background: rgb(255, 255, 255)
+}
+.stroke_text p{
+    font-family: 華康方圓體W7;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgba(1,97,42);
+}
+.stroke_text ul{
+    padding-left:20px;
+    line-height: 1.75rem;
+    font-size: 1rem;
+    margin: 0 0 10px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 995px){
+    .stroke_wrap img{
+        display: block;
+        width: 100%;
+    }
+    .buy2{
+        display: block;
+        width: 100%;
+    }
+    .writings_text div:nth-child(odd){
+        width: 100%;
+    }
+    .writings_text div:nth-child(even){
+        width: 100%;
+    }
+}
+@media screen  and (max-width: 499px){
+    .stroke_stn{
+        background: linear-gradient(-90deg, rgb(214, 225, 219) 68.8%, transparent 38.8%) center center /100% 100%,rgb(214, 225, 219, .5);
+    }
+    .stroke_wrap{
+        width: 90%;
+    }
+    .stroke_wrap img{
+        display: block;
+        width: 100%;
+    }
+    .buy2{
+        display: block;
+        width: 100%;
+    }
+    .stroke_text div:nth-child(odd){
+        width: 100%;
+    }
+    .stroke_text div:nth-child(even){
+        width: 100%;
+    }
+}
+/* ↑↑↑ 以上為詳細奔岳css ↑↑↑ ↑↑↑ 以上為詳細奔岳css ↑↑↑ */
+
+
+/*
+ 待處理
+1.漢堡選單( 無法關閉ok / 彈出及收起動態效果ok / 手風琴效果ok
+2.300px尺寸rwd ok
+3.百岳尺( 指針固定顯示在中間部qq / 文案內容ok / 顯示區排版qq / 尺條美術qq / 背景美術 qq )ok
+9.rwd按鈕統一大小ok
+11.百岳尺刻度(5)qq
+13.百岳圖指南針ok
+8.各分業banner圖片(1)ok
+14.js 整理ok
+12.人數計算動態(4)ok
+17.漢堡選單特效(4)ok
+10.手機板正常顯示(5**)ok
+16.hover效果(3)ok
+15ppt(6*)ok
+5.詳細奔岳(1)ok
+6.詳細岳曆(2)ok
+
+
+4.岳器( 登山鞋 / 登山衣 / 登山品 /登山包文案內容)x
+*/
